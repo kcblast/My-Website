@@ -1,7 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/servicestyle.css">
+<script src="javascript/servicescript.js"></script>
 </head>
 <body>
+  <ul class="topnav">
+                <img src="images\a.jpg" alt="image" height="45px" width="50px">
+               <li><a class="active" href="services.html">Service</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a class="active" href="#">Gallery</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+            </ul>
+
+
+<div class="container">
+ <div class="tab tab-1">
+    <div id='alert'></div>
+
+   <table id="table" border="1">
+     <!-- <tr>
+      <h2> ROASTER FOR MASS SERVING</h2>
+      <th>SUNDAY MASS</th>
+      </tr> -->
+      <thead>
+        <tr>
+          <th>FIRST MASS</th>
+          <th>SECOND MASS</th>
+          <th>THIRD MASS</th>
+          <th>EVENING MASS/BENEDITION</th> 
+          </tr>
+      </thead>
+      <tbody  id="showInput">
+
+      </tbody>
+    </table>
+
+    <div id='alert'></div>
+
+    
+    <div class="tab tab-2">
+    First Mass :<input type="text" name="First Mass" id="fname">
+    Second Mass :<input type="text" name="First Mass" id="sname">
+    Third Mass :<input type="text" name="First Mass" id="tname">
+    Evening Mass :<input type="text" name="First Mass" id="ename">
+
+    <button type="submit" onclick='addHtmlTableRow()'>Add</button> 
+    <button>Edit</button> 
+    <button>Remove</button> 
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
